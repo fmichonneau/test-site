@@ -8,7 +8,9 @@ categories: jekyll update
 ```
 {{ site.github | jsonify }}
 ```
+
 {% assign repo = site.github.repository_name %}
+{{ repo }}
 {{ site.github.public_repository[name == repo] | jsonify }}
 
 
