@@ -5,14 +5,11 @@ date:   2018-08-14 10:13:39 -0400
 categories: jekyll update
 ---
 
-```
-{{ site.github | jsonify }}
-```
+{% assign repo_name = site.github.repository_name %}
 
-{% assign repo = site.github.repository_name %}
-{{ repo }}
-{{ site.github.public_repository[name == repo] | jsonify }}
+{% assign repo_info = site.github.public_repositories | where: "name", repo_name %}
 
+Default branch: {{ repo_info[0].default_branch }}
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
