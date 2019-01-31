@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2019-01-31 07:22:00 -0500
+title:  "future!"
+date:   2019-01-31T12:26:00Z
 categories: test future
 ---
 
-This is a post for the future
+This is a post for the 
