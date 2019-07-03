@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+page root is : `{{ page.root }}`
